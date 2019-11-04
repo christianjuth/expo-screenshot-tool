@@ -1,0 +1,22 @@
+{
+  "name": "expo-screenshot-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "server.js",
+  "scripts": {
+    "dev": "npm i . -g"
+  },
+  "author": "Christian Juth",
+  "license": "MIT",
+  "dependencies": {
+    "cp-file": "^7.0.0",
+    "express": "^4.17.1",
+    "react-native-axios": "^0.17.1",
+    "react-native-svg": "^9.13.3",
+    "react-native-view-shot": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": "x",
+    "react-native": "x"
+  }
+}

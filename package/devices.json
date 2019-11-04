@@ -1,0 +1,361 @@
+{
+  "ios": {
+    "iPad": {
+      "height": 1024,
+      "width": 768,
+      "isLandscape": false
+    },
+    "iPad landscape": {
+      "height": 768,
+      "width": 1024,
+      "isLandscape": true
+    },
+    "iPad Mini": {
+      "height": 1024,
+      "width": 768,
+      "isLandscape": false
+    },
+    "iPad Mini landscape": {
+      "height": 768,
+      "width": 1024,
+      "isLandscape": true
+    },
+    "iPad Pro": {
+      "height": 1366,
+      "width": 1024,
+      "isLandscape": false
+    },
+    "iPad Pro landscape": {
+      "height": 1024,
+      "width": 1366,
+      "isLandscape": true
+    },
+    "iPhone 4": {
+      "height": 480,
+      "width": 320,
+      "isLandscape": false
+    },
+    "iPhone 4 landscape": {
+      "height": 320,
+      "width": 480,
+      "isLandscape": true
+    },
+    "iPhone 5": {
+      "height": 568,
+      "width": 320,
+      "isLandscape": false
+    },
+    "iPhone 5 landscape": {
+      "height": 320,
+      "width": 568,
+      "isLandscape": true
+    },
+    "iPhone 6": {
+      "height": 667,
+      "width": 375,
+      "isLandscape": false
+    },
+    "iPhone 6 landscape": {
+      "height": 375,
+      "width": 667,
+      "isLandscape": true
+    },
+    "iPhone 6 Plus": {
+      "height": 736,
+      "width": 414,
+      "isLandscape": false
+    },
+    "iPhone 6 Plus landscape": {
+      "height": 414,
+      "width": 736,
+      "isLandscape": true
+    },
+    "iPhone 7": {
+      "height": 667,
+      "width": 375,
+      "isLandscape": false
+    },
+    "iPhone 7 landscape": {
+      "height": 375,
+      "width": 667,
+      "isLandscape": true
+    },
+    "iPhone 7 Plus": {
+      "height": 736,
+      "width": 414,
+      "isLandscape": false
+    },
+    "iPhone 7 Plus landscape": {
+      "height": 414,
+      "width": 736,
+      "isLandscape": true
+    },
+    "iPhone 8": {
+      "height": 667,
+      "width": 375,
+      "isLandscape": false
+    },
+    "iPhone 8 landscape": {
+      "height": 375,
+      "width": 667,
+      "isLandscape": true
+    },
+    "iPhone 8 Plus": {
+      "height": 736,
+      "width": 414,
+      "isLandscape": false
+    },
+    "iPhone 8 Plus landscape": {
+      "height": 414,
+      "width": 736,
+      "isLandscape": true
+    },
+    "iPhone SE": {
+      "height": 568,
+      "width": 320,
+      "isLandscape": false
+    },
+    "iPhone SE landscape": {
+      "height": 320,
+      "width": 568,
+      "isLandscape": true
+    },
+    "iPhone X": {
+      "height": 812,
+      "width": 375,
+      "isLandscape": false
+    },
+    "iPhone X landscape": {
+      "height": 375,
+      "width": 812,
+      "isLandscape": true
+    },
+    "iPhone XR": {
+      "height": 896,
+      "width": 414,
+      "isLandscape": false
+    },
+    "iPhone XR landscape": {
+      "height": 414,
+      "width": 896,
+      "isLandscape": true
+    },
+  },
+  "android": {
+    "Blackberry PlayBook": {
+      "height": 1024,
+      "width": 600,
+      "isLandscape": false
+    },
+    "Blackberry PlayBook landscape": {
+      "height": 600,
+      "width": 1024,
+      "isLandscape": true
+    },
+    "BlackBerry Z30": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "BlackBerry Z30 landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Galaxy Note 3": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Galaxy Note 3 landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Galaxy Note II": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Galaxy Note II landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Galaxy S III": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Galaxy S III landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Galaxy S5": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Galaxy S5 landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "JioPhone 2": {
+      "height": 320,
+      "width": 240,
+      "isLandscape": false
+    },
+    "JioPhone 2 landscape": {
+      "height": 240,
+      "width": 320,
+      "isLandscape": true
+    },
+    "Kindle Fire HDX": {
+      "height": 1280,
+      "width": 800,
+      "isLandscape": false
+    },
+    "Kindle Fire HDX landscape": {
+      "height": 800,
+      "width": 1280,
+      "isLandscape": true
+    },
+    "LG Optimus L70": {
+      "height": 640,
+      "width": 384,
+      "isLandscape": false
+    },
+    "LG Optimus L70 landscape": {
+      "height": 384,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Microsoft Lumia 550": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": false
+    },
+    "Microsoft Lumia 950": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Microsoft Lumia 950 landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Nexus 10": {
+      "height": 1280,
+      "width": 800,
+      "isLandscape": false
+    },
+    "Nexus 10 landscape": {
+      "height": 800,
+      "width": 1280,
+      "isLandscape": true
+    },
+    "Nexus 4": {
+      "height": 640,
+      "width": 384,
+      "isLandscape": false
+    },
+    "Nexus 4 landscape": {
+      "height": 384,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Nexus 5": {
+      "height": 640,
+      "width": 360,
+      "isLandscape": false
+    },
+    "Nexus 5 landscape": {
+      "height": 360,
+      "width": 640,
+      "isLandscape": true
+    },
+    "Nexus 5X": {
+      "height": 732,
+      "width": 412,
+      "isLandscape": false
+    },
+    "Nexus 5X landscape": {
+      "height": 412,
+      "width": 732,
+      "isLandscape": true
+    },
+    "Nexus 6": {
+      "height": 732,
+      "width": 412,
+      "isLandscape": false
+    },
+    "Nexus 6 landscape": {
+      "height": 412,
+      "width": 732,
+      "isLandscape": true
+    },
+    "Nexus 6P": {
+      "height": 732,
+      "width": 412,
+      "isLandscape": false
+    },
+    "Nexus 6P landscape": {
+      "height": 412,
+      "width": 732,
+      "isLandscape": true
+    },
+    "Nexus 7": {
+      "height": 960,
+      "width": 600,
+      "isLandscape": false
+    },
+    "Nexus 7 landscape": {
+      "height": 600,
+      "width": 960,
+      "isLandscape": true
+    },
+    "Nokia Lumia 520": {
+      "height": 533,
+      "width": 320,
+      "isLandscape": false
+    },
+    "Nokia Lumia 520 landscape": {
+      "height": 320,
+      "width": 533,
+      "isLandscape": true
+    },
+    "Nokia N9": {
+      "height": 854,
+      "width": 480,
+      "isLandscape": false
+    },
+    "Nokia N9 landscape": {
+      "height": 480,
+      "width": 854,
+      "isLandscape": true
+    },
+    "Pixel 2": {
+      "height": 731,
+      "width": 411,
+      "isLandscape": false
+    },
+    "Pixel 2 landscape": {
+      "height": 411,
+      "width": 731,
+      "isLandscape": true
+    },
+    "Pixel 2 XL": {
+      "height": 823,
+      "width": 411,
+      "isLandscape": false
+    },
+    "Pixel 2 XL landscape": {
+      "height": 411,
+      "width": 823,
+      "isLandscape": true
+    }
+  }
+}
