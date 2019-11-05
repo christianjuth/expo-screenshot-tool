@@ -7,7 +7,7 @@ import devices from './devices';
 import useInterval from './useInterval';
 import FakeStatusbar from './FakeStatusbar';
 
-import {StateProvider, StateContext, useStateValue } from './state';
+import {StateProvider, StateContext, getState } from './state';
 const SET_STATUSBAR_PROPS = 'SET_STATUSBAR_PROPS';
 const SET_ENABLED = 'SET_ENABLED';
 const SET_DEVICE = 'SET_DEVICE';
@@ -51,6 +51,10 @@ export function Provider(props) {
       case END_CAPTURE:
         return {
           ...state,
+          device: {
+            height: '100%',
+            width: '100%'
+          },
           capturing: false
         }
       default:
@@ -76,9 +80,8 @@ function ScreenshotEngine(props) {
     device,
     enabled,
     capturing,
-    captureTimestamp,
     statusBarProps,
-  }, dispatch] = useStateValue();
+  }, dispatch] = getState();
 
   async function capture({ deviceName, next, timestamp }) {
     screen.current.capture().then(uri => {
@@ -104,7 +107,8 @@ function ScreenshotEngine(props) {
           type: SET_DEVICE,
           payload: {
             height,
-            width
+            width,
+            hasNotch: device.hasNotch
           }
         });
         setTimeout(() => {
@@ -126,7 +130,6 @@ function ScreenshotEngine(props) {
     function dequeue(queue) {
       let fn = queue.pop();
       fn(() => {
-        console.log(queue.length);
         if(queue.length > 0){
           dequeue(queue);
         }
@@ -163,7 +166,7 @@ function ScreenshotEngine(props) {
     <View style={styles.container}>
       <ViewShot style={{height, width}} ref={screen}>
         {props.children}
-        {capturing ? <FakeStatusbar {...statusBarProps}/> : null}
+        {capturing ? <FakeStatusbar {...statusBarProps} hasNotch={device.hasNotch}/> : null}
         <TouchableOpacity
           style={capturing ? styles.hide : styles.button}
           onPress={startCapture}
@@ -177,7 +180,7 @@ function ScreenshotEngine(props) {
 
 
 export function StatusBar(props) {
-  let [, dispatch] = useStateValue();
+  let [, dispatch] = getState();
 
   useEffect(() => {
     dispatch({

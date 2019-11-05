@@ -3,11 +3,21 @@ import {View, Text, StyleSheet} from 'react-native';
 import Icon from './Icon';
 
 
-export default function FakeStatusbar({barStyle}) {
+export default function FakeStatusbar({barStyle, hasNotch = false}) {
   const color = barStyle == 'light-content' ? '#fff' : '#000';
 
-  return (
-    <View style={styles.container}>
+  return hasNotch ? (
+    <View style={[styles.container, {top: 10, left: 30, right: 30}]}>
+      <View style={styles.left}>
+        <Text style={[styles.time, {color}]}>12:00</Text>
+      </View>
+      <View style={styles.right}>
+        <Icon name='wifi' color={color} size={17}></Icon>
+        <Icon name='battery' color={color} size={17}></Icon>
+      </View>
+    </View>
+  ) : (
+    <View style={[styles.container, {top: 1, left: 3, right: 5}]}>
       <View style={styles.left}>
         <Text style={[styles.text, {color}]}><Text style={styles.elipse}></Text> Carrier </Text>
         <Icon name='wifi' color={color} size={17}></Icon>
@@ -24,15 +34,10 @@ export default function FakeStatusbar({barStyle}) {
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    padding: 3,
     height: 20,
     alignItems: 'center',
     justifyContent: 'space-between',
-    // top: 20,
-    left: 0,
-    right: 0,
     flexDirection: 'row',
-    // backgroundColor: '#eee'
   },
 
   text: {
@@ -57,13 +62,12 @@ const styles = StyleSheet.create({
   left: {
     flexDirection: 'row',
     width: 100,
-    paddingLeft: 1
   },
 
   right: {
     width: 100,
-    alignItems: 'flex-end',
-    paddingRight: 3
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
 
 });
